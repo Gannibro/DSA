@@ -27,6 +27,8 @@ class LinkedList{
         bool removeFromHead(int &data);
         bool removeFromTail(int &data);
 
+        void traverse();
+
         bool isEmpty();
         void head(int &data);
         void print(char separator);
