@@ -1,35 +1,36 @@
-#include <iostream>
-#define linkedlist_h
+#include<iostream>
+#define LinkedList_h
 
 class Node{
-    public:
-        int info;
-        Node * next;
+    public:    
+        int info;  //Creating an integer value to store in the node
+        Node* next; //Creating a next pointer of a node which points to another node
 
-        Node(){}
-        Node(int d) : info (d), next(nullptr) {}
-        Node(int d, Node * next) : info(d), next(next) {}
+        Node(){}; //Default constructor
+        Node(int info):info(info), next(nullptr){}
+        Node(int info, Node* next):info(info), next(next){}
 };
 
 class LinkedList{
     private:
-        Node* HEAD;
-        Node* TAIL;
+        Node* HEAD; //Creating a HEAD node for the linked list.
+        Node* TAIL; //Creating a TAIL node for the linked list
+
     public:
-        LinkedList();
-        ~LinkedList();
-
-        void add(Node *pred, int data);
-        void addToHead(int data);
-        void addToTail(int data);
-
-        bool remove(int data);
-        bool removeFromHead(int &data);
-        bool removeFromTail(int &data);
-
-        void traverse();
-
+        LinkedList(){ //Constructor to initialize the head and tail pointer to nullptr
+            HEAD = nullptr;
+            TAIL = nullptr;
+        }
+        ~LinkedList(){} //Destructor of the class LinkedList
+        void printlist();
         bool isEmpty();
-        void head(int &data);
-        void print(char separator);
+        void addToHead(int info);
+        void addToTail(int info);
+        void traverse();
+        void removeFromHead();
+        void removeFromTail();
+        void addAfter(int, int);
+        void remove(int);
+        void search(int);
+        bool retrieve(int, Node **);
 };
