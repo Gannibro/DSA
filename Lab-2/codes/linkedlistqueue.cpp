@@ -37,15 +37,15 @@ int main(){
             std::cout << "The queue is empty" << std::endl;
         }
 
-        llQueue.enqueue(10);
-        llQueue.enqueue(20);
-        llQueue.enqueue(30);
-        std::cout << "Front element: " << llQueue.front() << std::endl; // Output: 10
-        std::cout << "Rear element: " << llQueue.rear() << std::endl;   // Output: 30
+        llQueue.enqueue(1);
+        llQueue.enqueue(2);
+        llQueue.enqueue(3);
+        std::cout << "Front element: " << llQueue.front() << std::endl; 
+        std::cout << "Rear element: " << llQueue.rear() << std::endl;   
 
-        std::cout << "Dequeued element: " << llQueue.dequeue() << std::endl; // Output: 10
-        std::cout << "Front element after dequeue: " << llQueue.front() << std::endl; // Output: 20
-        std::cout << "Rear element after dequeue: " << llQueue.rear() << std::endl;   // Output: 30
+        std::cout << "Dequeued element: " << llQueue.dequeue() << std::endl; 
+        std::cout << "Front element after dequeue: " << llQueue.front() << std::endl; 
+        std::cout << "Rear element after dequeue: " << llQueue.rear() << std::endl;   
 
 
 }

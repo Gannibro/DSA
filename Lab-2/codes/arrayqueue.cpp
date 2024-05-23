@@ -68,9 +68,9 @@ int main(){
         std::cout << "The queue is empty" << std::endl;
     }
 
-    arrQueue.enqueue(10); //adds element into the queue
-    arrQueue.enqueue(20);
-    arrQueue.enqueue(30);
+    arrQueue.enqueue(1); //adds element into the queue
+    arrQueue.enqueue(2);
+    arrQueue.enqueue(3);
     std::cout << "Front element: " << arrQueue.front() << std::endl;
     std::cout << "Rear element: " << arrQueue.rear() << std::endl;
 

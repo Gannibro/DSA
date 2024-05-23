@@ -47,9 +47,9 @@ int main(){
     else{
         cout << "The stack is not empty" << endl;
     }
-    stack.push(5);
-    stack.push(6);
-    stack.push(7);
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
     cout << "Top element: " << stack.top() << endl;
 
     cout << "Popped element: " << stack.pop() << endl;

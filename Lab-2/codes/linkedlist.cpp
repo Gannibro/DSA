@@ -2,6 +2,20 @@
 #include"../header/linkedlist.h"
 using namespace std;
 
+int LinkedList::returnHead(){
+    if(HEAD!=NULL){
+        return HEAD->info;
+    }
+    return -1;
+}
+
+int LinkedList::returnTail(){
+    if(TAIL!=NULL){
+        return TAIL->info;
+    }
+    return -1;
+}
+
 void LinkedList::printlist()//display node data 
         {
             Node * newNode = HEAD;
@@ -170,7 +184,7 @@ bool LinkedList::retrieve(int data, Node** outputPtr) {
     }
 }
 
-int main(){
+/*int main(){
     LinkedList list1; //creating an object list1 of the class Node i.e creating a linked list
     if(list1.isEmpty()){
         cout<<"The list is empty"<<endl;
@@ -207,3 +221,4 @@ int main(){
         cout << "Data not found" << endl;
     }
 }
+*/
